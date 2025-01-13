@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% load static %} # use builtin tag - static tag - construct path to static asset
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "bostonpayroll/style_bp_1.css" %}">
+{% endblock %}
+
+{% block page_title %}
+    HOME PAGE
+{% endblock %}
+
