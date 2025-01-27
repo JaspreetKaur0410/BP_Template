@@ -1,0 +1,168 @@
+/* Base Styling */
+.section-testimonials {
+    padding: 4rem 2rem;
+    text-align: center;
+    display: grid;
+    max-width: 1200px;
+    margin: 5rem auto;
+}
+
+.container-testimonials {
+    margin-bottom: 2rem;
+}
+
+.carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 7px;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.testimonial-slide {
+    background-color: #cd6305;
+    border-radius: 10px;
+    min-width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-testimonial {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial {
+    padding: 2rem;
+    text-align: center;
+    max-width: 60rem;
+}
+
+.testimonial-text {
+    font-size: clamp(1rem, 2vw, 2rem);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: #ffd8a8;
+    text-align: center;
+}
+
+.testimonial-author {
+    font-weight: bold;
+    color: #fdf3e5;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.testimonial-job {
+    font-size: 1rem;
+    color: #f3d8b8;
+}
+
+/* Buttons */
+.btn-testimonial-direction {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 2;
+}
+
+.btn--left {
+    left: 10px;
+}
+
+.btn--right {
+    right: 10px;
+}
+
+.btn-icon {
+    width: 2rem;
+    height: 2rem;
+    color: white;
+}
+
+/* Dots */
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #cd6305;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot--fill {
+    background-color: #E98B38;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-testimonials {
+        padding: 3rem 1.5rem;
+    }
+
+    .img-testimonial {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .testimonial-text {
+        font-size: clamp(0.9rem, 2vw, 2rem);
+    }
+
+    .testimonial-author {
+        font-size: 1rem;
+    }
+
+    .testimonial-job {
+        font-size: 0.9rem;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-testimonials {
+        padding: 2rem 1rem;
+    }
+
+    .img-testimonial {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .testimonial-text {
+        font-size: 0.9rem;
+    }
+
+    .dot {
+        width: 8px;
+        height: 8px;
+    }
+}

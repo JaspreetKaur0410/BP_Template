@@ -3,9 +3,564 @@
 
 {% block css_files %}
     <link rel="stylesheet" href="{% static "bostonpayroll/style_bp_1.css" %}">
+    <link rel="stylesheet" href="{% static "bostonpayroll/testimonials.css" %}">
+    <link rel="stylesheet" href="{% static "bostonpayroll/faqs.css" %}">
+    <link rel="stylesheet" href="{% static "bostonpayroll/services.css" %}">
+    <link rel="stylesheet" href="{% static "bostonpayroll/contact.css" %}">
+    <link rel="stylesheet" href="{% static "bostonpayroll/footer.css" %}">
 {% endblock %}
+
+{% block js_files %}
+    <script src="{% static 'js/script.js' %}"></script>
+    <script src="{% static 'js/faqs.js' %}"></script>
+    <script src="{% static 'js/header.js' %}"></script>
+{% endblock %}
+
+<script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
 
 {% block page_title %}
     HOME PAGE
+{% endblock %}
+{% block content %}
+    <!-- start header !-->
+    {% include 'bostonpayroll/includes/header.html' %}
+    <!-- end header !-->
+
+    <main>
+        <!-- start section-hero !-->
+        <section class="section-hero">
+            <div class="hero">
+                <div class="hero-text-box">
+                    <h3 class="hero-h3">
+                        Your Trusted Partner in Payroll and Compliance at
+                    </h3>
+                    <h1 class="heading-primary">
+                        <span class="hero-boston">Boston</span> <span class="hero-payroll">Payroll</span>
+                    </h1>
+                    <p class="hero-description">
+                        we empower your business with
+                        hassle-free payroll solutions
+                        designed for accuracy, efficiency, and peace of mind.
+                    </p>
+                    <a href="#" class="btn btn--full margin-right-sm">Get Started</a>
+                    <a href="#" class="btn btn--outline">Learn More &darr;</a>
+                    {#                   <div class="deleivered-meals">#}
+                    {#                       <div class="deleivered-imgs">#}
+                    {#                           <img src="img/customers/customer-1.jpg" alt="customer-photo">#}
+                    {#                           <img src="img/customers/customer-2.jpg" alt="customer-photo">#}
+                    {#                           <img src="img/customers/customer-3.jpg" alt="customer-photo">#}
+                    {#                           <img src="img/customers/customer-4.jpg" alt="customer-photo">#}
+                    {#                           <img src="img/customers/customer-5.jpg" alt="customer-photo">#}
+                    {#                           <img src="img/customers/customer-6.jpg" alt="customer-photo">#}
+                    {#                    </div>#}
+                    {#                    <p class="deleivered-text"><span>250,000+</span> meals delivered last year!</p>#}
+                    {#                   </div>#}
+                </div>
+                <div class="hero-img-box">
+                    <img src="{% static "images/home/dashboard.jpeg" %}" class="hero-img" alt="payroll dashboard">
+                </div>
+            </div>
+        </section>
+        <!-- end section-hero !-->
+
+        <!-- start integrations Logo Section -->
+        <section class="section-featured">
+            <div class="container">
+                <h2 class="heading-integrations">
+                    GL Integrations
+                </h2>
+                <p class="integration-description">
+                    Our General Ledger Integration simplifies payroll accounting by allowing seamless
+                    imports into QuickBooks®, Xero, Sage, eliminating manual entry and reducing errors.
+                    This streamlined process saves time, enhances efficiency, and minimizes corrections
+                    for a hassle-free experience.
+                </p>
+                <div class="logos">
+                    <img src="{% static "images/integrations/xero-2.png" %}"
+                         alt="Xero Accounting logo">
+                    <img src="{% static "images/integrations/intuit.png" %}"
+                         alt="Intuit QuickBooks logo">
+                    <img src="{% static "images/integrations/sage.png" %}"
+                         alt="Sage Accounting logo">
+                </div>
+            </div>
+        </section>
+        <!-- end integrations Logo Section -->
+
+        <!-- start How it WORKS SECTION -->
+        <section class="section-how">
+            <div class="container">
+                <span class="subheading">
+                    How it works
+                </span>
+                <h2 class="heading-secondary">
+                    Smart Payroll Solutions, Just a Call Away!
+                </h2>
+            </div>
+
+            <div class="container grid grid--3-cols grid--center-v">
+                <!-- STEP 1 -->
+                <div class="step-text-box">
+                    <p class="step-number">01</p>
+                    <h3 class="heading-tertiary">
+                        Place a call
+                    </h3>
+                    <p class="step-description">
+                        Easily connect with our team by giving us a call. No long waits—just instant access to payroll
+                        experts.
+                        Our support team is ready to assist you.
+                    </p>
+                </div>
+
+                <!-- STEP 2 -->
+                <div class="step-text-box">
+                    <p class="step-number">02</p>
+                    <h3 class="heading-tertiary">
+                        Talk to our experts
+                    </h3>
+                    <p class="step-description">
+                        Discuss your payroll needs with our specialists.
+                        Whether it’s tax compliance, employee benefits, or automated processing, we got you.
+                    </p>
+                </div>
+                <!-- STEP 3 -->
+                <div class="step-text-box">
+                    <p class="step-number">03</p>
+                    <h3 class="heading-tertiary">
+                        Get Solutions
+                    </h3>
+                    <p class="step-description">
+                        Receive a tailored payroll solution that fits your business.
+                        We streamline your payroll, ensuring accuracy, compliance, and efficiency.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- end How IT WORKS SECTION -->
+
+        <!-- start what we offer Section -->
+        <div class="section-what-we-offer">
+            <div class="container">
+                <span class="subheading">
+                    What we offer
+                </span>
+                <h2 class="heading-secondary">
+                    Payroll Solution Tailored to your interests
+                </h2>
+                <p class="step-description">
+                    Everything you need to support
+                    your business. Payroll Processing, Hiring & Onboarding, Time & Attendance, HR & Compliance, and
+                    more.
+                </p>
+            </div>
+        </div>
+
+        <div class="container grid grid--2-cols grid--center-v">
+            <!-- feature 1 -->
+            <div class="step-text-box">
+                <div class="container-what-we-offer">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                            <path fill-rule="evenodd"
+                                  d="M9 1.5H5.625c-1.036 0-1.875.84-1.875 1.875v17.25c0 1.035.84 1.875 1.875 1.875h12.75c1.035 0 1.875-.84 1.875-1.875V12.75A3.75 3.75 0 0 0 16.5 9h-1.875a1.875 1.875 0 0 1-1.875-1.875V5.25A3.75 3.75 0 0 0 9 1.5Zm6.61 10.936a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 14.47a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                                  clip-rule="evenodd"/>
+                            <path d="M12.971 1.816A5.23 5.23 0 0 1 14.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 0 1 3.434 1.279 9.768 9.768 0 0 0-6.963-6.963Z"/>
+                        </svg>
+                    </div>
+                    <div class="subheading-feature">
+                        <h4 class="heading-h4">
+                            Payroll Processing
+                        </h4>
+                        <p class="feature-description">
+                            Enter and approve payroll online, we handle the tax payments and tax filings automatically.
+                        </p>
+                        <a href="#" class="link-read">
+                            Read more about Payroll Processing >
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-text-box">
+                <!-- feature 2 -->
+                <div class="container-what-we-offer">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                            <path fill-rule="evenodd"
+                                  d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z"
+                                  clip-rule="evenodd"/>
+                        </svg>
+
+                    </div>
+                    <div class="subheading-feature">
+                        <h4 class="heading-h4">
+                            Time & Attendance
+                        </h4>
+                        <p class="feature-description">
+                            Track employee hours, track PTO/vacation time,
+                            time-off requests,
+                            and workforce management.
+                        </p>
+                        <a href="#" class="link-read">
+                            Read more about Time & Attendance >
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-text-box">
+                <!-- feature 3 -->
+                <div class="container-what-we-offer">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                            <path d="M4.5 6.375a4.125 4.125 0 1 1 8.25 0 4.125 4.125 0 0 1-8.25 0ZM14.25 8.625a3.375 3.375 0 1 1 6.75 0 3.375 3.375 0 0 1-6.75 0ZM1.5 19.125a7.125 7.125 0 0 1 14.25 0v.003l-.001.119a.75.75 0 0 1-.363.63 13.067 13.067 0 0 1-6.761 1.873c-2.472 0-4.786-.684-6.76-1.873a.75.75 0 0 1-.364-.63l-.001-.122ZM17.25 19.128l-.001.144a2.25 2.25 0 0 1-.233.96 10.088 10.088 0 0 0 5.06-1.01.75.75 0 0 0 .42-.643 4.875 4.875 0 0 0-6.957-4.611 8.586 8.586 0 0 1 1.71 5.157v.003Z"/>
+                        </svg>
+
+                    </div>
+                    <div class="subheading-feature">
+                        <h4 class="heading-h4">
+                            HR & Compliance
+                        </h4>
+                        <p class="feature-description">
+                            Get advice from certified HR experts, access essential tools and resources, protect your
+                            business.
+                        </p>
+                        <a href="#" class="link-read">
+                            Read more about HR & Compliance >
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-text-box">
+                <!-- feature 4 -->
+                <div class="container-what-we-offer">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                            <path fill-rule="evenodd"
+                                  d="M11.622 1.602a.75.75 0 0 1 .756 0l2.25 1.313a.75.75 0 0 1-.756 1.295L12 3.118 10.128 4.21a.75.75 0 1 1-.756-1.295l2.25-1.313ZM5.898 5.81a.75.75 0 0 1-.27 1.025l-1.14.665 1.14.665a.75.75 0 1 1-.756 1.295L3.75 8.806v.944a.75.75 0 0 1-1.5 0V7.5a.75.75 0 0 1 .372-.648l2.25-1.312a.75.75 0 0 1 1.026.27Zm12.204 0a.75.75 0 0 1 1.026-.27l2.25 1.312a.75.75 0 0 1 .372.648v2.25a.75.75 0 0 1-1.5 0v-.944l-1.122.654a.75.75 0 1 1-.756-1.295l1.14-.665-1.14-.665a.75.75 0 0 1-.27-1.025Zm-9 5.25a.75.75 0 0 1 1.026-.27L12 11.882l1.872-1.092a.75.75 0 1 1 .756 1.295l-1.878 1.096V15a.75.75 0 0 1-1.5 0v-1.82l-1.878-1.095a.75.75 0 0 1-.27-1.025ZM3 13.5a.75.75 0 0 1 .75.75v1.82l1.878 1.095a.75.75 0 1 1-.756 1.295l-2.25-1.312a.75.75 0 0 1-.372-.648v-2.25A.75.75 0 0 1 3 13.5Zm18 0a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-.372.648l-2.25 1.312a.75.75 0 1 1-.756-1.295l1.878-1.096V14.25a.75.75 0 0 1 .75-.75Zm-9 5.25a.75.75 0 0 1 .75.75v.944l1.122-.654a.75.75 0 1 1 .756 1.295l-2.25 1.313a.75.75 0 0 1-.756 0l-2.25-1.313a.75.75 0 1 1 .756-1.295l1.122.654V19.5a.75.75 0 0 1 .75-.75Z"
+                                  clip-rule="evenodd"/>
+                        </svg>
+
+                    </div>
+                    <div class="subheading-feature">
+                        <h4 class="heading-h4">
+                            Employee Benefits
+                        </h4>
+                        <p class="feature-description">
+                            Discover comprehensive accounting services tailored to your business needs.
+                            From bookkeeping to financial reporting
+                        </p>
+                        <a href="#" class="link-read">
+                            Read more about Employee Benefits >
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end what we offer Section -->
+
+        <!-- start services Section -->
+        <section class="section-how">
+            <div class="container">
+                <span class="subheading">
+                    Our services
+                </span>
+                <h2 class="heading-secondary">
+                    Start Simplifying. We’re Ready to Help.
+                </h2>
+                <p class="step-description">
+                    Save time and money, and gain confidence
+                    with our easy online payroll features and fast
+                    and flexible support.
+                </p>
+            </div>
+
+            <div class="container grid grid--2-cols grid--center-v">
+                <!-- STEP 1 -->
+                <div class="services-step-text-box">
+                    <p class="step-number"></p>
+                    <h3 class="heading-tertiary">
+                        Full-Service Payroll Software
+                    </h3>
+                    <p class="step-description">
+                        With just a few clicks or taps, you can enter hours,
+                        review, and approve each pay run effortlessly.
+                        Payroll taxes calculated and paid on your behalf
+                    </p>
+                </div>
+                <div class="step-img-box">
+                    <img src="{% static "images/phone/phone-1.png" %}" class="step-img"
+                         alt="selection screen">
+                </div>
+            </div>
+
+            <div class="container grid grid--2-cols grid--center-v">
+                <div class="step-img-box">
+                    <img src="{% static "images/phone/phone-1.png" %}" class="step-img"
+                         alt="selection screen">
+                </div>
+                <!-- STEP 2 -->
+                <div class="services-step-text-box">
+                    <p class="step-number"></p>
+                    <h3 class="heading-tertiary">
+                        Advance Employee Onboarding and HR Tools
+                    </h3>
+                    <p class="step-description">
+                        Streamline hiring and HR management
+                        with advanced tools for seamless
+                        employee onboarding and administration.
+                    </p>
+                </div>
+            </div>
+
+            <div class="container grid grid--2-cols grid--center-v">
+                <!-- STEP 3 -->
+                <div class="services-step-text-box">
+                    <p class="step-number"></p>
+                    <h3 class="heading-tertiary">
+                        Powerful Reporting Customization
+                    </h3>
+                    <p class="step-description">
+                        Easily tailor reports to
+                        meet your specific business needs with powerful customization options.
+                    </p>
+                </div>
+                <div class="step-img-box">
+                    <img src="{% static "images/phone/phone-3.png" %}" class="step-img"
+                         alt="selection screen">
+                </div>
+            </div>
+            <div class="container grid grid--2-cols grid--center-v">
+                <!-- STEP 4 -->
+                <div class="step-img-box">
+                    <img src="{% static "images/phone/phone-1.png" %}" class="step-img"
+                         alt="selection screen">
+                </div>
+                <div class="services-step-text-box">
+                    <p class="step-number"></p>
+                    <h3 class="heading-tertiary">
+                        Easy time and PTO Management
+                    </h3>
+                    <p class="step-description">
+                        Effortlessly track time and manage PTO requests with an intuitive, user-friendly system.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- end services Section -->
+
+
+        <!-- start testimonials section -->
+        <section class="section-testimonials">
+            <div class="container-testimonials">
+                <span class="subheading">Testimonials</span>
+                <h2 class="heading-secondary">What customers are saying</h2>
+                <p class="step-description">We're proud to help businesses like these grow every day.</p>
+            </div>
+
+            <div class="carousel">
+                <button class="btn-testimonial-direction btn--left" onclick="prevSlide()">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                              d="M11.78 5.22a.75.75 0 0 1 0 1.06L8.06 10l3.72 3.72a.75.75 0 1 1-1.06 1.06l-4.25-4.25a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Z"
+                              clip-rule="evenodd"/>
+                    </svg>
+                </button>
+
+                <div class="carousel-track">
+                    <!-- Slide 1 -->
+                    <div class="testimonial-slide">
+                        <img class="img-testimonial" src="{% static 'images/testimonials/maria.jpg' %}" alt="Maria de"/>
+                        <blockquote class="testimonial">
+                            <p class="testimonial-text">
+                                “As a business owner, I wear a lot of hats. BostonPayroll saves me a lot of time and
+                                headaches. Now I can focus on the 1,001 other things that need my attention!”
+                            </p>
+                            <p class="testimonial-author">Mohit Saini</p>
+                            <p class="testimonial-job">Business owner at Nick's Place</p>
+                        </blockquote>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="testimonial-slide">
+                        <img class="img-testimonial" src="{% static 'images/testimonials/maria.jpg' %}" alt="John Doe"/>
+                        <blockquote class="testimonial">
+                            <p class="testimonial-text">
+                                “The team at BostonPayroll is outstanding. I have full confidence that my employees will
+                                be paid correctly and on time.”
+                            </p>
+                            <p class="testimonial-author">Ajay Sharma</p>
+                            <p class="testimonial-job">Manager at XYZ Corp</p>
+                        </blockquote>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="testimonial-slide">
+                        <img class="img-testimonial" src="{% static 'images/testimonials/maria.jpg' %}"
+                             alt="Ajay Smith"/>
+                        <blockquote class="testimonial">
+                            <p class="testimonial-text">
+                                “BostonPayroll has completely streamlined our payroll process. It’s easy, efficient, and
+                                secure.”
+                            </p>
+                            <p class="testimonial-author">Punit Goyal</p>
+                            <p class="testimonial-job">CEO at ABC Ltd.</p>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <button class="btn-testimonial-direction btn--right" onclick="nextSlide()">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                              d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
+                              clip-rule="evenodd"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="dots">
+                <button class="dot dot--fill" onclick="goToSlide(0)"></button>
+                <button class="dot" onclick="goToSlide(1)"></button>
+                <button class="dot" onclick="goToSlide(2)"></button>
+            </div>
+        </section>
+        <!-- end testimonials section -->
+
+        <!-- start FAQ section -->
+        <section class="section-faqs">
+            <div class="container grid grid--2-cols">
+                <div class="faqs-right-side">
+                    <span class="subheading">
+                        FREQUENTLY ASKED QUESTIONS
+                    </span>
+                    <h2 class="heading-secondary">
+                        What questions do you have?
+                    </h2>
+                    <p class="step-description">
+                        Review answers to our most commonly asked questions or contact us for more details.
+                    </p>
+                    <a href="#" class="btn btn--full margin-right-sm btn--contactus">Contact us</a>
+                </div>
+                <div class="accordion">
+                    <div class="item">
+                        <p class="number">01</p>
+                        <!-- FAQ - 1 -->
+                        <p class="text">How does it work?</p>
+                        <div class="hidden-box">
+                            <p>
+                                Once we have your account setup, you will have a username and password to
+                                the system.
+                            </p>
+                        </div>
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                             stroke-width="1.5"
+                             stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/>
+                        </svg>
+                    </div>
+
+                    <div class="item">
+                        <p class="number">02</p>
+                        <!-- FAQ - 2 -->
+                        <p class="text">Are there any setup fees?</p>
+                        <div class="hidden-box">
+                            <p>
+                                No. Your account is always setup by a payroll expert and we never charge a setup fee.
+                            </p>
+                        </div>
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                             stroke-width="1.5"
+                             stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/>
+                        </svg>
+                    </div>
+
+                    <div class="item">
+                        <p class="number">03</p>
+                        <!-- FAQ - 3 -->
+                        <p class="text">Do I have to sign a contract?</p>
+                        <div class="hidden-box">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam doloribus quod neque ipsum
+
+                            </p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                             stroke="currentColor" class="icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end FAQ section -->
+
+        <!-- start contact section !-->
+        <!-- Contact Us SECTION -->
+        <section class="section-cta">
+            <div class="container">
+                <div class="cta">
+                    <div class="cta-text-box">
+                        <h2 class="heading-secondary">
+                            Get in touch!
+                        </h2>
+                        <p class="cta-text">
+                            We serve customers across the entire
+                            US from our Boston, MA.
+                        </p>
+                        <form class="cta-form" action="#">
+                            <div>
+                                <label for="full-name"> Full Name </label>
+                                <input id="full-name" type="text" placeholder="John Smith" required/>
+                            </div>
+
+                            <div>
+                                <label for="phone"> Full Name </label>
+                                <input id="phone" type="number" placeholder="781-XXX-XXXX" required/>
+                            </div>
+
+                            <div>
+                                <label for="email"> Email </label>
+                                <input id="email" type="email" placeholder="me@example.com" required>
+                            </div>
+
+                            <div>
+                                <label for="business"> Business Name </label>
+                                <input id="business" type="text" placeholder="Enter your business name" required>
+                            </div>
+
+                            <div class="textarea">
+                                <label for="msg"> Your Message </label>
+                                <textarea name="msg" id="msg">Write a message here...</textarea>
+                            </div>
+
+                            {#                            <div>#}
+                            {#                                <label for="select-where">Where did you hear about us?</label>#}
+                            {#                                <select id="select-where" required>#}
+                            {#                                    <option value="">Please choose one option:</option>#}
+                            {#                                    <option value="friends">friends/family</option>#}
+                            {#                                    <option value="youtube">youtube video</option>#}
+                            {#                                    <option value="facebook">facebook</option>#}
+                            {#                                </select>#}
+                            {#                            </div>#}
+                            <button class="btn btn--form">Sign up now</button>
+                        </form>
+
+                    </div>
+                    <div class="cta-img-box" role="img" aria-label="woman doing payroll">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end contact section !-->
+
+        <!-- start footer !-->
+        {% include 'bostonpayroll/includes/footer.html' %}
+        <!-- end footer !-->
+
+
+    </main>
 {% endblock %}
 

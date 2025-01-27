@@ -1,0 +1,218 @@
+/* Base styles */
+.section-faqs {
+    /*padding: 2rem 2rem;*/
+    display: flex;
+    justify-content: center;
+}
+
+/* Left side - Heading & CTA */
+.faqs-right-side {
+    text-align: left;
+    max-width: 100%;
+}
+
+/*.subheading {*/
+/*    font-size: 1.6rem;*/
+/*    font-weight: 600;*/
+/*    color: #cd6305;*/
+/*    text-transform: uppercase;*/
+/*}*/
+
+
+/*.step-description {*/
+/*    font-size: 1.6rem;*/
+/*    color: #555;*/
+/*    margin-top: 1rem;*/
+/*    margin-bottom: 2rem;*/
+/*}*/
+
+.btn--contactus {
+    display: inline-block;
+    background-color: #E98B38;
+    color:#fff;
+    font-size:2rem;
+    padding:1.6rem 3.2rem;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    margin-bottom: 1rem;
+}
+.btn--contactusl:link,
+.btn--contactus:visited{
+    background-color: #E98B38;
+}
+.btn--contactus:hover,
+.btn--contactus:active{
+    background-color: #E67E22;
+}
+
+/* Accordion Styles */
+.accordion {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.item {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    border-radius: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #fff;
+}
+
+.item:hover {
+    transform: translateY(-2px);
+}
+
+.item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.number {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #868686;
+}
+
+.text {
+    font-size: 1.8rem;
+    font-weight: 600;
+    flex-grow: 1;
+    padding: 0 10px;
+}
+
+.icon {
+    width: 4rem;
+    stroke: #cd6305;
+    transition: transform 0.3s ease;
+}
+
+/* Hidden Content */
+.hidden-box {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, padding 0.3s ease-in-out;
+    padding: 0 1rem; /* Keep padding but initially collapsed */
+}
+
+.hidden-box p {
+    font-size: 1.6rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.hidden-box ul {
+    font-size: 1.6rem;
+    color: #555;
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+    list-style: disc;
+}
+
+/* Open state */
+.open {
+    border-top: 4px solid #cd6305;
+}
+
+.open .hidden-box {
+    max-height: 500px; /* Adjust this value as needed */
+    padding: 1rem; /* Smooth padding transition */
+}
+.open .number,
+.open .text {
+    color: #cd6305;
+}
+
+
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    .faqs-right-side {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .accordion {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-faqs {
+        padding: 6rem 1.5rem;
+    }
+
+    .grid {
+        gap: 2.5rem;
+    }
+
+    .heading-secondary {
+        font-size: 2.5rem;
+    }
+
+    .step-description {
+        font-size: 1.4rem;
+    }
+
+    .btn--contactus {
+        font-size: 1.4rem;
+        padding: 0.8rem 1.6rem;
+    }
+
+    .text {
+        font-size: 1.6rem;
+    }
+
+    .hidden-box p,
+    .hidden-box ul {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-faqs {
+        padding: 0;
+    }
+
+    .grid {
+        gap: 2rem;
+    }
+
+    .heading-secondary {
+        font-size: 2.2rem;
+    }
+
+    .text {
+        font-size: 1.5rem;
+    }
+
+    .hidden-box p,
+    .hidden-box ul {
+        font-size: 1.3rem;
+    }
+
+    .btn--contactus {
+        font-size: 1.3rem;
+        padding: 0.7rem 1.4rem;
+    }
+
+    svg .icon {
+        width: 2rem;
+    }
+}

@@ -1,0 +1,94 @@
+.section-cta{
+    /*padding:1.6rem 0;*/
+}
+.cta{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #E67E22;
+    box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.15rem);
+    border-radius:11px;
+    background-image: linear-gradient(to right bottom,#f47e3f,#efb917dc);
+    overflow: hidden;
+}
+.cta-text-box{
+    color:#2E1907;
+    padding: 4.8rem 6.4rem;
+}
+.cta .heading-secondary{
+    color:inherit;
+    margin-bottom:3.2rem;
+}
+.cta-text{
+    font-size:1.8rem;
+    line-height: 1.8rem;
+    margin-bottom: 3.2rem;
+}
+.cta-img-box{
+    background-image: linear-gradient(
+                            to right bottom,
+                            rgba(235, 151, 78, 0.3),
+                            rgba(230, 125, 34, 0.3)
+                        ),
+                         url("../images/contact/contact-1.jpg");
+    background-size: auto;
+    background-position: center;
+}
+.cta-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap:2.2rem;
+    column-gap: 3.2rem;
+}
+.cta-form label{
+    display: block;
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+    font-weight: 500;
+}
+.cta-form input,
+.cta-form select{
+    width:100%;
+    padding:1.2rem;
+    font-size:1.8rem;
+    font-family: inherit;
+    border:none;
+    background-color:#fdf2e9;
+    border-radius: 9px;
+    box-shadow:0 1px 2px rgba(0,0,0,0.1);
+    color:inherit;
+}
+.cta-form input::placeholder{
+    color:#aaa;
+}
+.btn--form{
+    background-color: #45260a;
+    color:#fdf2e9;
+    align-self:end;
+    padding:1.2rem;
+    display: block;
+}
+.btn--form:hover{
+    background-color:#fff;
+    color:#555;
+}
+.cta *:focus{
+    outline:none;
+    box-shadow:inset 0 0 0 1rem
+                    rgba(253, 242, 233,0.5);
+}
+.textarea{
+    grid-column: span 2;
+}
+textarea {
+    width: 100%;
+    height: 90%;
+    margin-bottom: 10rem;
+    padding:1.2rem;
+    font-size:1.8rem;
+    font-family: inherit;
+    border:none;
+    background-color:#fdf2e9;
+    border-radius: 9px;
+    box-shadow:0 1px 2px rgba(0,0,0,0.1);
+    color:inherit;
+}
